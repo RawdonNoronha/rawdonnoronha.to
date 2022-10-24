@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top-bar{
+    background-color: #EAEDED;
+    margin-top: 4px;
+    border-radius: 30px;
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.top-bar-container{
+    display: inline-flex;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+}
+
+.menu-icon:hover{
+    box-shadow: 2px 2px 2px black;
+}
+
+.top-bar-title{
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    top: 15px;
+    font-size: 28px;
+    color: black;
+    left: 63px;
+}
+.dark-mode{
+    padding: 6px;
+    width: 28px;
+    height: 28px;
+    color: black;
+    fill: black;
+}
+.dark-container{
+    width: 40px;
+    height:40px;
+    cursor:pointer;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    right: 12px;
+    top: 14px;
+}
+.dark-container:hover{
+    box-shadow: 2px 2px 2px black;
+}
