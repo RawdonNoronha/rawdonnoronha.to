@@ -3,12 +3,13 @@
     margin: 0;
 }
 .top-bar{
-    background-color: #EAEDED;
+    background-color: #d6eaf8;
     margin-top: 4px;
     border-radius: 30px;
     height: 60px;
     width: 100%;
     border: 1px solid black;
+    z-index: 1;
 }
 
 .top-bar-container{
@@ -26,7 +27,7 @@
 }
 
 .menu-icon:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px grey;
 }
 
 .top-bar-title{
@@ -56,5 +57,137 @@
     top: 14px;
 }
 .dark-container:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.footer{
+    background-color: #d6eaf8;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.side-bar{
+    height: -webkit-fill-available;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow-x: hidden;
+    transition: 1s;
+    background-color: white;
+    border: black 1px inset;
+}
+.menu-contents a {
+    display: grid;
+    font-size: 30px;
+    align-content: space-between;
+    text-decoration: none;
+}
+
+.intro{
+    width: -webkit-fill-available;
+    height: 500px;
+    box-shadow: 2px 2px 2px grey;
+    background-color: #d6eaf8;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.wrapper{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+}
+.box div{
+    position: absolute;
+    bottom: -150px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    animation: animate 10s linear infinite;
+}
+.triangle div{
+    position: absolute;
+    bottom: -150px;
+    width: 25px;
+    height: 25px;
+    color: white;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(1){
+    left: 66%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+}
+.box div:nth-child(2){
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+}
+.box div:nth-child(3){
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+}
+.box div:nth-child(4){
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 4s;
+}
+.box div:nth-child(5){
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+}
+.triangle div:nth-child(1){
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 4s;
+}
+.triangle div:nth-child(2){
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+}
+.triangle div:nth-child(3){
+    left: 65%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1.5s;
+}
+.triangle div:nth-child(4){
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+}
+.triangle div:nth-child(5){
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0)scale(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-800px) scale(2) rotate(180deg);
+        opacity: 0;
+    }
 }
